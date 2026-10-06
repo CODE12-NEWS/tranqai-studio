@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chính sách quyền riêng tư và dữ liệu của TRANQAI Studio.">
+  <title>Chính sách quyền riêng tư | TRANQAI STUDIO</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202a25;
+      --muted: #5d6b63;
+      --line: #dce4dc;
+      --paper: #f7f8f3;
+      --surface: #fff;
+      --green: #27634d;
+      --green-soft: #e9f1e9;
+      --orange: #c66b43;
+      font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.72;
+    }
+
+    a { color: var(--green); text-underline-offset: 3px; }
+    a:hover { color: var(--orange); }
+
+    .topbar {
+      align-items: center;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      padding: 20px max(24px, calc((100vw - 1160px) / 2));
+    }
+
+    .brand {
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 750;
+      letter-spacing: .02em;
+      text-decoration: none;
+    }
+
+    .brand span { color: var(--green); }
+    .topbar a:last-child { font-size: 14px; font-weight: 650; }
+
+    .page {
+      display: grid;
+      gap: 72px;
+      grid-template-columns: 220px minmax(0, 760px);
+      margin: 0 auto;
+      max-width: 1160px;
+      padding: 68px 24px 96px;
+    }
+
+    .contents {
+      align-self: start;
+      position: sticky;
+      top: 28px;
+    }
+
+    .contents p, .eyebrow {
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 750;
+      letter-spacing: .12em;
+      margin: 0 0 14px;
+      text-transform: uppercase;
+    }
+
+    .contents nav { border-left: 1px solid var(--line); }
+
+    .contents a {
+      color: var(--muted);
+      display: block;
+      font-size: 13px;
+      line-height: 1.45;
+      padding: 8px 0 8px 14px;
+      text-decoration: none;
+    }
+
+    .contents a:hover { color: var(--green); }
+
+    main { min-width: 0; }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(38px, 6vw, 58px);
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 1.08;
+      margin: 0;
+      max-width: 660px;
+    }
+
+    .updated { color: var(--muted); font-size: 13px; margin: 18px 0 28px; }
+
+    .notice {
+      background: var(--green-soft);
+      border-left: 3px solid var(--green);
+      margin: 0 0 44px;
+      padding: 18px 22px;
+    }
+
+    .notice p { margin: 0; }
+
+    .intro { color: #3f4d45; font-size: 17px; margin: 0 0 42px; }
+
+    section { border-top: 1px solid var(--line); padding: 32px 0 18px; scroll-margin-top: 24px; }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 1.25;
+      margin: 0 0 18px;
+    }
+
+    h3 { font-size: 17px; line-height: 1.4; margin: 26px 0 8px; }
+    p { margin: 0 0 15px; }
+    ul { margin: 8px 0 20px; padding-left: 22px; }
+    li { margin: 6px 0; padding-left: 3px; }
+
+    .table-wrap { margin: 18px 0 24px; overflow-x: auto; }
+
+    table { border-collapse: collapse; min-width: 540px; text-align: left; width: 100%; }
+    th, td { border-bottom: 1px solid var(--line); padding: 12px 14px; vertical-align: top; }
+    th { background: #eef2ec; font-size: 13px; }
+    td { font-size: 14px; }
+
+    .contact {
+      background: var(--ink);
+      color: #f7f8f3;
+      margin-top: 28px;
+      padding: 24px;
+    }
+
+    .contact a { color: #c9e0ce; }
+    .contact p:last-child { margin-bottom: 0; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+      padding: 22px 24px;
+      text-align: center;
+    }
+
+    @media (max-width: 780px) {
+      .page { display: block; padding-top: 42px; }
+      .contents { margin-bottom: 38px; position: static; }
+      .contents nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .contents a { padding-right: 10px; }
+    }
+
+    @media (max-width: 480px) {
+      .topbar { padding: 16px 18px; }
+      .page { padding: 34px 18px 64px; }
+      .contents nav { grid-template-columns: 1fr; }
+      h2 { font-size: 25px; }
+      .notice { padding: 16px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">TRANQAI <span>STUDIO</span></a>
+    <a href="index.html">Trang chủ</a>
+  </header>
+
+  <div class="page">
+    <aside class="contents" aria-label="Mục lục chính sách">
+      <p>Trong trang này</p>
+      <nav>
+        <a href="#controller">1. Thông tin chúng tôi xử lý</a>
+        <a href="#use">2. Cách chúng tôi sử dụng</a>
+        <a href="#sharing">3. Chia sẻ dữ liệu</a>
+        <a href="#retention">4. Thời hạn lưu trữ</a>
+        <a href="#rights">5. Quyền của bạn</a>
+        <a href="#other">6. Thông tin khác</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+    </aside>
+
+    <main>
+      <p class="eyebrow">TRANQAI Studio · Quyền riêng tư</p>
+      <h1>Chính sách quyền riêng tư và dữ liệu</h1>
+      <p class="updated">Cập nhật lần cuối: 06 tháng 10, 2026</p>
+
+      <div class="notice">
+        <p>Bằng việc sử dụng dịch vụ của TRANQAI Studio, bạn xác nhận đã đọc và hiểu chính sách này. Nếu không đồng ý, vui lòng ngừng sử dụng dịch vụ. Bạn có thể rút lại sự đồng ý hoặc yêu cầu xử lý dữ liệu của mình theo các quyền được nêu dưới đây.</p>
+      </div>
+
+      <p class="intro">TRANQAI Studio tôn trọng quyền riêng tư của bạn. Chính sách này giải thích loại thông tin chúng tôi có thể thu thập, cách sử dụng và chia sẻ thông tin, thời gian lưu trữ cũng như cách bạn thực hiện các quyền của mình. Chính sách áp dụng cho dịch vụ có dẫn chiếu đến chính sách này; dịch vụ có chính sách riêng sẽ tuân theo chính sách riêng đó.</p>
+
+      <section id="controller">
+        <p class="eyebrow">Phần 1 · Vai trò của chúng tôi</p>
+        <h2>1. Thông tin chúng tôi xử lý</h2>
+        <p>Tùy dịch vụ bạn sử dụng và cách bạn tương tác với chúng tôi, TRANQAI Studio có thể xử lý các nhóm thông tin sau:</p>
+        <h3>Thông tin bạn cung cấp</h3>
+        <ul>
+          <li>Thông tin hồ sơ như tên, biệt danh, ảnh đại diện và thông tin bạn tự nguyện bổ sung.</li>
+          <li>Nội dung bạn gửi khi trả lời khảo sát, liên hệ hỗ trợ hoặc trao đổi với người dùng khác.</li>
+          <li>Thông tin thanh toán và giao dịch nếu dịch vụ có tính năng mua hàng hoặc thanh toán.</li>
+        </ul>
+        <h3>Thông tin được thu thập khi bạn sử dụng dịch vụ</h3>
+        <p>Chúng tôi có thể ghi nhận địa chỉ IP, thông tin thiết bị (ví dụ: phiên bản ứng dụng, hệ điều hành, loại mạng), thời điểm và hoạt động sử dụng dịch vụ. Khi bạn liên hệ với bộ phận hỗ trợ, chúng tôi cũng lưu nội dung trao đổi để xử lý yêu cầu.</p>
+        <h3>Thông tin tạo ra trong quá trình sử dụng</h3>
+        <p>Thông tin này có thể gồm dữ liệu hoạt động, tiến trình sử dụng dịch vụ, nội dung trò chuyện hoặc nội dung khác bạn tạo và hiển thị trong dịch vụ.</p>
+        <h3>Thông tin từ đối tác</h3>
+        <p>Trong phạm vi cần thiết, chúng tôi có thể nhận dữ liệu phân tích tổng hợp, dữ liệu hỗ trợ phòng chống gian lận, thông tin xác minh thanh toán hoặc dữ liệu từ nền tảng nơi dịch vụ được cung cấp.</p>
+        <h3>Cookie và công nghệ tương tự</h3>
+        <p>Trang web hoặc dịch vụ có thể sử dụng cookie, nhật ký máy chủ, mã định danh và công nghệ tương tự để duy trì chức năng, ghi nhớ lựa chọn và phân tích hiệu quả. Bạn có thể quản lý cookie trong cài đặt trình duyệt; việc tắt một số cookie có thể ảnh hưởng đến chức năng của dịch vụ.</p>
+      </section>
+
+      <section id="use">
+        <p class="eyebrow">Mục đích xử lý</p>
+        <h2>2. Cách chúng tôi sử dụng thông tin</h2>
+        <p>Chúng tôi sử dụng thông tin phù hợp với mục đích cung cấp, duy trì và cải thiện dịch vụ, bao gồm:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Loại thông tin</th><th>Mục đích sử dụng</th></tr></thead>
+            <tbody>
+              <tr><td>Tên, biệt danh, mã tài khoản</td><td>Tạo và quản lý tài khoản, lưu thông tin hồ sơ và tiến trình sử dụng.</td></tr>
+              <tr><td>Dữ liệu hoạt động</td><td>Cung cấp phản hồi, duy trì dịch vụ và hiểu cách người dùng tương tác.</td></tr>
+              <tr><td>IP và thông tin thiết bị</td><td>Vận hành dịch vụ, bảo mật, xác minh, khắc phục lỗi và ngăn chặn lạm dụng.</td></tr>
+              <tr><td>Nội dung trò chuyện</td><td>Chuyển tiếp nội dung liên lạc khi tính năng tương ứng được bật hoặc sử dụng.</td></tr>
+              <tr><td>Thông tin giao dịch</td><td>Xử lý thanh toán và duy trì hồ sơ giao dịch theo quy định.</td></tr>
+              <tr><td>Yêu cầu hỗ trợ, khảo sát</td><td>Giải quyết vấn đề, cải thiện sản phẩm và dịch vụ khách hàng.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Cơ sở xử lý</h3>
+        <p>Nếu bạn ở Khu vực Kinh tế châu Âu, chúng tôi xử lý dữ liệu khi có sự đồng ý của bạn, khi cần thiết để thực hiện hợp đồng, khi có lợi ích chính đáng phù hợp hoặc khi pháp luật yêu cầu. Bạn có thể liên hệ với chúng tôi để hỏi về cơ sở áp dụng cho một hoạt động xử lý cụ thể.</p>
+      </section>
+
+      <section id="sharing">
+        <p class="eyebrow">Bên nhận dữ liệu</p>
+        <h2>3. Chia sẻ thông tin</h2>
+        <p>Chúng tôi chỉ chia sẻ thông tin trong phạm vi cần thiết cho các mục đích được mô tả trong chính sách này, chẳng hạn với:</p>
+        <ul>
+          <li>Người dùng khác, khi bạn sử dụng tính năng hồ sơ, cộng đồng hoặc giao tiếp.</li>
+          <li>Nhà cung cấp dịch vụ hỗ trợ chúng tôi về lưu trữ, phân tích, hỗ trợ người dùng, xử lý thanh toán, quảng cáo hoặc bảo mật; các bên này phải xử lý dữ liệu theo chỉ dẫn và thỏa thuận với chúng tôi.</li>
+          <li>Công ty liên kết của TRANQAI Studio để vận hành và hỗ trợ dịch vụ.</li>
+          <li>Cơ quan công quyền hoặc cơ quan thực thi pháp luật khi có yêu cầu hợp pháp, hoặc bên liên quan khi cần điều tra gian lận và bảo vệ quyền, an toàn.</li>
+          <li>Bên tiếp nhận trong trường hợp sáp nhập, tái cấu trúc hoặc chuyển nhượng toàn bộ hay một phần hoạt động kinh doanh.</li>
+        </ul>
+      </section>
+
+      <section id="retention">
+        <p class="eyebrow">Vòng đời dữ liệu</p>
+        <h2>4. Thời hạn lưu trữ</h2>
+        <p>Chúng tôi lưu trữ thông tin trong thời gian cần thiết để cung cấp dịch vụ và thực hiện các mục đích nêu trong chính sách, trừ khi pháp luật yêu cầu hoặc cho phép thời hạn dài hơn. Thời hạn cụ thể phụ thuộc vào loại dữ liệu và dịch vụ:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Loại thông tin</th><th>Thời hạn lưu trữ tham khảo</th></tr></thead>
+            <tbody>
+              <tr><td>Thông tin tài khoản và biệt danh</td><td>Trong thời gian tài khoản hoạt động; xóa trong vòng 30 ngày sau khi xóa tài khoản.</td></tr>
+              <tr><td>Dữ liệu hoạt động và mã tài khoản</td><td>Trong thời gian sử dụng dịch vụ; xóa trong vòng 15 ngày sau khi xóa tài khoản.</td></tr>
+              <tr><td>Nội dung trò chuyện âm thanh</td><td>Tối đa 7 ngày, sau đó được xóa tự động.</td></tr>
+              <tr><td>Nội dung trò chuyện văn bản</td><td>Trong thời gian sử dụng dịch vụ; xóa trong vòng 7 ngày sau khi xóa tài khoản.</td></tr>
+              <tr><td>IP và thông tin thiết bị</td><td>Trong thời gian sử dụng dịch vụ; xóa trong vòng 15 đến 30 ngày sau khi xóa tài khoản.</td></tr>
+              <tr><td>Hồ sơ giao dịch</td><td>Trong thời gian cần thiết và lâu hơn nếu pháp luật yêu cầu.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Khi xóa dữ liệu, chúng tôi áp dụng biện pháp phù hợp để dữ liệu không thể khôi phục hoặc tái tạo, theo quy định pháp luật hiện hành.</p>
+      </section>
+
+      <section id="rights">
+        <p class="eyebrow">Quyền của người dùng</p>
+        <h2>5. Quyền của bạn</h2>
+        <p>Tùy nơi bạn sinh sống và luật áp dụng, bạn có thể yêu cầu truy cập, nhận bản sao, chỉnh sửa, xóa hoặc hạn chế xử lý dữ liệu cá nhân; phản đối một số hoạt động xử lý; hoặc rút lại sự đồng ý. Bạn cũng có thể yêu cầu chuyển dữ liệu của mình ở định dạng có cấu trúc khi pháp luật quy định.</p>
+        <p>Để thực hiện quyền, hãy gửi yêu cầu qua email <a href="mailto:longbilon631@gmail.com">longbilon631@gmail.com</a>. Chúng tôi có thể cần xác minh danh tính trước khi xử lý yêu cầu. Với người dùng thuộc Khu vực Kinh tế châu Âu, chúng tôi sẽ phản hồi trong thời hạn theo luật áp dụng, thường là một tháng và có thể gia hạn trong trường hợp được phép.</p>
+        <h3>Thông báo dịch vụ</h3>
+        <p>Chúng tôi có thể gửi thông báo cần thiết liên quan đến hoạt động, bảo mật, quyền riêng tư hoặc quản trị dịch vụ. Đây không phải thông báo quảng cáo và có thể không tắt được.</p>
+      </section>
+
+      <section id="other">
+        <p class="eyebrow">Bảo vệ và cập nhật</p>
+        <h2>6. Thông tin khác</h2>
+        <h3>Bảo mật thông tin</h3>
+        <p>Chúng tôi áp dụng các biện pháp quản trị, kỹ thuật và vật lý phù hợp nhằm bảo vệ thông tin khỏi mất mát, truy cập hoặc tiết lộ trái phép. Tuy nhiên, không phương thức truyền tải hay lưu trữ nào có thể được bảo đảm an toàn tuyệt đối.</p>
+        <h3>Trẻ em</h3>
+        <p>Dịch vụ không hướng đến trẻ em dưới 16 tuổi và chúng tôi không chủ ý thu thập dữ liệu cá nhân của các em. Nếu bạn cho rằng trẻ em đã cung cấp thông tin cho chúng tôi, vui lòng liên hệ để chúng tôi kiểm tra và thực hiện biện pháp phù hợp.</p>
+        <h3>Liên kết đến dịch vụ bên thứ ba</h3>
+        <p>Dịch vụ có thể chứa liên kết đến trang web hoặc ứng dụng do bên khác vận hành. Chính sách này không áp dụng cho các dịch vụ đó; bạn nên xem chính sách quyền riêng tư của bên thứ ba tương ứng.</p>
+        <h3>Chuyển dữ liệu quốc tế</h3>
+        <p>Thông tin có thể được xử lý tại quốc gia khác với nơi bạn sinh sống, bao gồm nơi các đơn vị liên kết hoặc nhà cung cấp dịch vụ hoạt động. Chúng tôi áp dụng các biện pháp bảo vệ phù hợp theo yêu cầu của pháp luật.</p>
+        <h3>Thay đổi chính sách</h3>
+        <p>TRANQAI Studio có thể cập nhật chính sách này theo thời gian. Khi có thay đổi quan trọng, chúng tôi sẽ thông báo qua dịch vụ hoặc địa chỉ liên hệ bạn đã cung cấp và cập nhật ngày sửa đổi trên trang này.</p>
+      </section>
+
+      <section id="contact">
+        <p class="eyebrow">Câu hỏi và khiếu nại</p>
+        <h2>Liên hệ TRANQAI Studio</h2>
+        <p>Nếu bạn có câu hỏi, muốn thực hiện quyền dữ liệu hoặc khiếu nại về cách thông tin cá nhân được xử lý, vui lòng liên hệ:</p>
+        <div class="contact">
+          <p><strong>TRANQAI Studio</strong></p>
+          <p>Email: <a href="mailto:longbilon631@gmail.com">longbilon631@gmail.com</a></p>
+          <p>Bạn cũng có thể gửi khiếu nại đến cơ quan bảo vệ dữ liệu có thẩm quyền tại nơi bạn sinh sống hoặc làm việc.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>© 2026 TRANQAI Studio · Chính sách quyền riêng tư</footer>
+</body>
+</html>
