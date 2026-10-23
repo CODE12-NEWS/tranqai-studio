@@ -164,6 +164,36 @@
 		.focus h3 { font-size: 17px; font-weight: 650; margin: 18px 0 8px; }
 		.focus p { color: var(--muted); font-size: 13px; margin: 0; max-width: 300px; }
 
+		.section-band { background: var(--white); border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); }
+		.section-intro { color: var(--muted); font-size: 16px; margin: 22px 0 0; max-width: 640px; }
+
+		.card-grid {
+			background: var(--line);
+			border: 1px solid var(--line);
+			display: grid;
+			gap: 1px;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			margin-top: 56px;
+		}
+
+		.card { background: var(--paper); min-height: 230px; padding: 28px 26px 30px; }
+		.card-tag { color: var(--orange); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+		.card h3, .research-item h3, .step h3, .principle h3 { font-size: 17px; font-weight: 650; margin: 16px 0 8px; }
+		.card p, .research-item p, .step p, .principle p { color: var(--muted); font-size: 13px; margin: 0; }
+
+		.research-list { display: grid; gap: 0 56px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 56px; }
+		.research-item { border-top: 1px solid var(--line); display: grid; gap: 22px; grid-template-columns: 34px 1fr; padding: 24px 0 28px; }
+		.research-item h3 { margin-top: 0; }
+		.research-item .focus-number { padding-top: 4px; }
+
+		.steps { display: grid; gap: 26px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 56px; }
+		.step { border-top: 2px solid var(--green); padding-top: 20px; }
+		.step-label { color: var(--green); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+
+		.principles { display: grid; gap: 26px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 56px; }
+		.principle { background: var(--white); border: 1px solid var(--line); padding: 24px 22px 26px; }
+		.principle h3 { margin-top: 0; }
+
 		.contact-band { background: var(--green-deep); color: var(--white); }
 		.contact-inner { align-items: center; display: flex; gap: 32px; justify-content: space-between; margin: 0 auto; max-width: 1160px; padding: 48px 28px; }
 		.contact-inner .section-label { color: var(--lime); margin-bottom: 12px; }
@@ -184,11 +214,16 @@
 		footer a { text-underline-offset: 3px; }
 		footer p { margin: 0; }
 
+		@media (max-width: 1000px) {
+			.card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+			.steps, .principles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+		}
+
 		@media (max-width: 700px) {
 			.topbar { height: 66px; padding: 0 20px; }
 			.nav { gap: 18px; }
 			.nav a { font-size: 12px; }
-			.nav a:first-child { display: none; }
+			.nav a:first-child, .nav a:nth-child(3) { display: none; }
 			h1 { font-size: 44px; }
 			h2 { font-size: 32px; }
 			.contact-inner h2 { font-size: 30px; }
@@ -203,6 +238,10 @@
 			.focus-item, .focus-item + .focus-item { border-bottom: 1px solid var(--line); border-right: 0; min-height: 0; padding: 22px 0; }
 			.focus-item:last-child { border-bottom: 0; }
 			.focus h3 { margin-top: 11px; }
+			.card-grid { grid-template-columns: 1fr; margin-top: 38px; }
+			.card { min-height: 0; padding: 24px 22px; }
+			.research-list { grid-template-columns: 1fr; margin-top: 30px; }
+			.steps, .principles { grid-template-columns: 1fr; margin-top: 38px; }
 			.contact-inner { align-items: flex-start; flex-direction: column; padding: 42px 24px; }
 			footer { align-items: flex-start; flex-direction: column; gap: 10px; padding: 20px 24px; }
 		}
@@ -221,7 +260,8 @@
 		</a>
 		<nav class="nav" aria-label="Main navigation">
 			<a href="#about">About</a>
-			<a href="#focus">Our focus</a>
+			<a href="#industries">Industries</a>
+			<a href="#research">Research</a>
 			<a class="contact-link" href="mailto:longbilon631@gmail.com">Contact</a>
 		</nav>
 	</header>
@@ -266,6 +306,170 @@
 					<span class="focus-number">03</span>
 					<h3>Applications for customers</h3>
 					<p>Open new directions for applied AI and deliver useful applications shaped around TranQ AI customer needs.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="section-band" id="industries" aria-labelledby="industries-title">
+			<div class="section-shell">
+				<div class="mission">
+					<p class="section-label">02 / Industries</p>
+					<div>
+						<h2 id="industries-title">AI for the industries that shape everyday life.</h2>
+						<p class="section-intro">We partner with technology teams across sectors to turn AI research into practical tools that save time, reduce costs, and improve the quality of services people rely on every day.</p>
+					</div>
+				</div>
+
+				<div class="card-grid">
+					<article class="card">
+						<span class="card-tag">Healthcare</span>
+						<h3>Smarter, more accessible care</h3>
+						<p>AI assistants that support clinical documentation, medical image analysis, and patient triage, helping care teams spend more time with patients.</p>
+					</article>
+					<article class="card">
+						<span class="card-tag">Education</span>
+						<h3>Learning that adapts to every learner</h3>
+						<p>Personalized tutoring, automated feedback, and content generation tools that help teachers support students at their own pace.</p>
+					</article>
+					<article class="card">
+						<span class="card-tag">Finance</span>
+						<h3>Safer, faster financial services</h3>
+						<p>Models for fraud detection, risk scoring, and document processing that make financial services more secure and easier to use.</p>
+					</article>
+					<article class="card">
+						<span class="card-tag">Retail &amp; e-commerce</span>
+						<h3>Better experiences for shoppers</h3>
+						<p>Recommendation engines, visual search, and conversational support that help customers find what they need and help businesses grow.</p>
+					</article>
+					<article class="card">
+						<span class="card-tag">Manufacturing</span>
+						<h3>Efficient, reliable operations</h3>
+						<p>Computer vision for quality inspection, predictive maintenance, and production forecasting that reduce waste and downtime.</p>
+					</article>
+					<article class="card">
+						<span class="card-tag">Agriculture &amp; environment</span>
+						<h3>Sustainable growth with data</h3>
+						<p>Crop monitoring, weather-aware forecasting, and resource optimization that help farmers and communities adapt to a changing climate.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-shell" id="research" aria-labelledby="research-title">
+			<div class="mission">
+				<p class="section-label">03 / Research areas</p>
+				<div>
+					<h2 id="research-title">Core research that powers every product we build.</h2>
+					<p class="section-intro">Our lab focuses on foundational AI capabilities and the engineering needed to make them fast, affordable, and dependable in production.</p>
+				</div>
+			</div>
+
+			<div class="research-list">
+				<article class="research-item">
+					<span class="focus-number">01</span>
+					<div>
+						<h3>Language models and reasoning</h3>
+						<p>Fine-tuning and evaluating large language models for domain-specific tasks, multilingual understanding, and reliable reasoning.</p>
+					</div>
+				</article>
+				<article class="research-item">
+					<span class="focus-number">02</span>
+					<div>
+						<h3>Computer vision</h3>
+						<p>Image and video understanding for detection, segmentation, document reading, and visual quality control.</p>
+					</div>
+				</article>
+				<article class="research-item">
+					<span class="focus-number">03</span>
+					<div>
+						<h3>Speech and audio</h3>
+						<p>Speech recognition, text-to-speech, and voice interfaces that make technology more natural and accessible.</p>
+					</div>
+				</article>
+				<article class="research-item">
+					<span class="focus-number">04</span>
+					<div>
+						<h3>AI agents and automation</h3>
+						<p>Agents that use tools, retrieve knowledge, and complete multi-step workflows safely alongside people.</p>
+					</div>
+				</article>
+				<article class="research-item">
+					<span class="focus-number">05</span>
+					<div>
+						<h3>Predictive analytics</h3>
+						<p>Time-series forecasting and anomaly detection that help organizations plan ahead and act early.</p>
+					</div>
+				</article>
+				<article class="research-item">
+					<span class="focus-number">06</span>
+					<div>
+						<h3>Efficient and on-device AI</h3>
+						<p>Model compression, quantization, and optimized inference so AI runs quickly on GPUs, edge devices, and mobile hardware.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="section-band" id="process" aria-labelledby="process-title">
+			<div class="section-shell">
+				<div class="mission">
+					<p class="section-label">04 / How we work</p>
+					<div>
+						<h2 id="process-title">From idea to impact in four steps.</h2>
+						<p class="section-intro">A clear, iterative process keeps every project grounded in real needs and measurable results.</p>
+					</div>
+				</div>
+
+				<div class="steps">
+					<article class="step">
+						<span class="step-label">Step 01</span>
+						<h3>Discover</h3>
+						<p>We work with you to understand the problem, the people it affects, and the data available.</p>
+					</article>
+					<article class="step">
+						<span class="step-label">Step 02</span>
+						<h3>Research</h3>
+						<p>We explore and benchmark models, then select the approach that best balances accuracy, speed, and cost.</p>
+					</article>
+					<article class="step">
+						<span class="step-label">Step 03</span>
+						<h3>Build</h3>
+						<p>We develop prototypes quickly, test them with real users, and refine them into production-ready systems.</p>
+					</article>
+					<article class="step">
+						<span class="step-label">Step 04</span>
+						<h3>Deploy and improve</h3>
+						<p>We launch, monitor performance, and continuously improve models as data and needs evolve.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-shell" id="principles" aria-labelledby="principles-title">
+			<div class="mission">
+				<p class="section-label">05 / Our principles</p>
+				<div>
+					<h2 id="principles-title">Responsible AI that people can trust.</h2>
+					<p class="section-intro">We believe AI should make life better for everyone. These principles guide how we research, build, and deploy.</p>
+				</div>
+			</div>
+
+			<div class="principles">
+				<article class="principle">
+					<h3>Human-centered</h3>
+					<p>We design AI to support people and keep humans in control of important decisions.</p>
+				</article>
+				<article class="principle">
+					<h3>Privacy by design</h3>
+					<p>We protect user data at every stage, from collection and training to deployment.</p>
+				</article>
+				<article class="principle">
+					<h3>Open and transparent</h3>
+					<p>We build on open-source foundations and are clear about what our systems can and cannot do.</p>
+				</article>
+				<article class="principle">
+					<h3>Real-world impact</h3>
+					<p>We measure success by the value our applications create for customers and communities.</p>
 				</article>
 			</div>
 		</section>
